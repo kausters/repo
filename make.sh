@@ -13,8 +13,7 @@ function reset_out {
 }
 
 function make_apps {
-	cd $src
-	for app in `find . -type d -mindepth 1 -maxdepth 1`
+	for app in `find $src -type d -mindepth 1 -maxdepth 1`
 	do
 		dpkg-deb -b -Zgzip $app 2>/dev/null
 	done
@@ -23,9 +22,8 @@ function make_apps {
 }
 
 function merge_apps {
-	cd $out
-	dpkg-scanpackages -m . >Packages
-	gzip -9 -f Packages
+	dpkg-scanpackages -m $out >$out/Packages
+	gzip -9 -f $out/Packages
 }
 
 function clean_vars {
