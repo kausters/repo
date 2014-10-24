@@ -1,0 +1,164 @@
+/* Additional Styles to improve look & caching */
+panel > block {
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+}
+.small {
+	font-size:90%;
+}
+.fieldset {
+	clear:left
+}
+.header {
+	margin: 10px 10px;
+	padding: 4px 13px
+}
+.header > img {
+	float:left;
+	margin:0 0 10px 0
+}
+.header > div {
+	margin:7px 0 0 12px; float:left
+}
+.header h1 {
+	font-size: 22px
+}
+.header h2 {
+	font-size: 17px
+}
+.cydia-only {
+	display:none
+}
+body.pinstripe {
+	padding:0;
+	background:#fff url(background.png) repeat-y top center;
+}
+@media screen and (max-device-width: 480px) {
+	body.pinstripe { background: #c7ced5 url(http://cache.saurik.com/menes/pinstripes.png); }
+	panel { background:transparent }
+	.cydia-only { display:block }
+	.browser-only { display:none }
+}
+
+panel > fieldset > a:first-child {
+    -moz-border-radius-topleft: 9px;
+    -webkit-border-top-left-radius: 9px;
+    -moz-border-radius-topright: 9px;
+    -webkit-border-top-right-radius: 9px;
+}
+
+panel > fieldset > a:last-child {
+    -moz-border-radius-bottomleft: 9px;
+    -webkit-border-bottom-left-radius: 9px;
+    -moz-border-radius-bottomright: 9px;
+    -webkit-border-bottom-right-radius: 9px;
+}
+
+panel > fieldset > a[type="ad"]:last-child > div:first-child,
+panel > fieldset > a[type="comment"]:last-child > div:first-child,
+panel > fieldset > a[type="profile"]:last-child > div:first-child,
+panel > fieldset > a[type="thumb"]:last-child > div:first-child {
+    -moz-border-radius-bottomleft: 9px;
+    -webkit-border-bottom-left-radius: 9px;
+}
+
+fieldset > a > img.icon,
+fieldset > div > img.icon {
+    height: auto;
+    /* XXX: small differences due to font bugs */
+    margin: -7px 6px -9px -8px;
+    max-height: 29px;
+    min-width: 29px;
+    width: 29px;
+}
+
+fieldset > div.switch {
+	background: right center no-repeat url(switch-on.png);
+}
+
+fieldset > div.gray > label {
+	font-weight: normal;
+	opacity: 0.5;
+}
+
+fieldset > div.slider {
+	background: center center no-repeat url(slider.png);
+	height: 43px;
+}
+
+panel > p {
+    display: block;
+    line-height: 24px;
+    font-size: inherit;
+    color: #4d4d70;
+    text-shadow: rgba(255, 255, 255, 0.75) 1px 1px 0;
+    text-align: justify;
+}
+
+fieldset div textarea {
+	-webkit-appearance: none;
+	background: white;
+	border:medium none;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+panel > fieldset > div, panel > label {
+	-webkit-user-select: none;
+}
+
+.selectable {
+    -webkit-user-select: text;
+}
+
+.horizontal-scroll-wrapper {
+	height:367px;
+	background:#8f9192;
+	border-top: 2px solid #7e8080;
+	border-bottom: 2px solid #7e8080;
+	overflow-x: hidden;
+	position:relative;
+	z-index:1;
+	width: auto;
+}
+
+.horizontal-scroll-area {
+	z-index:1;
+	padding-top: 5px;
+/*	padding: 10px 10px 0px 10px;*/
+}
+.horizontal-scroll-area img {
+	width: 225px;
+/*	margin-left:10px;
+	margin-right:0px;*/
+	margin: 0px 0px 0px 10px;
+	border: 1px solid rgba(155,155,155,0.5);
+	outline: 1px solid rgba(32,32,32,0.2);
+}
+
+.horizontal-scroll-pips {
+	text-align:center;
+	float: bottom;
+	margin-top:5px;
+	padding:0;
+}
+
+/*
+.horizontal-scroll-area img:first-child {
+	margin-left:40px;
+}
+*/
+
+.wrapper {
+	height:367px;
+	width: auto;
+	/*padding: 10px;
+	margin: 0px;*/
+	border-top: 2px solid #7e8080;
+	border-bottom: 2px solid #7e8080;
+	overflow-x: hidden;
+	background:#8f9192;
+	position:relative;
+	z-index:1;
+}
