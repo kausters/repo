@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Documents/Repo/cydia
+cd ~/Documents/Repo
 find . -name '*.DS_Store' -type f -delete
 find . -name '.deb' -type f -delete
 rm -f upload/Packages.gz
