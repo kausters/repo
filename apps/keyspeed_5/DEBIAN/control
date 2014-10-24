@@ -4,6 +4,7 @@ Version: 5.0.0
 Architecture: iphoneos-arm
 Description: Paātrina rakstīšanu ar iOS 5 LV tastatūru.
 Homepage: http://kristapsausters.lv/
+Depiction: http://repo.kristapsausters.lv/www/keyspeed/index.htm
 Maintainer: PienaZupa <pienazupa@gmail.com>
 Author: PienaZupa <pienazupa@gmail.com>
 Section: Keyboards

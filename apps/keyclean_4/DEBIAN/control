@@ -4,7 +4,9 @@ Version: 4.0.3
 Architecture: iphoneos-arm
 Description: Aizvāc svešos simbolus no iOS 4 tastatūras.
 Homepage: http://kristapsausters.lv/
+Depiction: http://repo.kristapsausters.lv/www/keycleaner/index.htm
 Maintainer: PienaZupa <pienazupa@gmail.com>
 Author: PienaZupa <pienazupa@gmail.com>
 Section: Keyboards
+Recommends: lv.kristapsausters.keyspeed
 Pre-Depends: firmware (>= 4.0), firmware (<< 5.0)
