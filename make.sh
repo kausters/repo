@@ -4,7 +4,7 @@ function init {
 	dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # set working directory
 }
 
-function clean {
+function purge {
 	cd $dir
 	find . -name '*.DS_Store' -type f -delete
 	find . -name '.deb' -type f -delete
@@ -33,7 +33,7 @@ function merge {
 }
 
 init
-clean
+purge
 compile
 move
 merge
