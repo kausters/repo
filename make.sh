@@ -15,7 +15,6 @@ function reset_out {
 function make_apps {
 	cd $src
 	for app in `find . -type d -mindepth 1 -maxdepth 1`
-	#for app in `ls -d */`
 	do
 		dpkg-deb -b -Zgzip $app 2>/dev/null
 	done
