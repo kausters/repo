@@ -14,10 +14,10 @@ function reset_out {
 
 function make_apps {
 	cd $src
-	for SRC in `find . -type d -mindepth 1 -maxdepth 1`
-	#for SRC in `ls -d */`
+	for app in `find . -type d -mindepth 1 -maxdepth 1`
+	#for app in `ls -d */`
 	do
-		dpkg-deb -b -Zgzip ${SRC} 2>/dev/null
+		dpkg-deb -b -Zgzip $app 2>/dev/null
 	done
 	mkdir -p $out/deb
 	mv $src/*.deb $_
