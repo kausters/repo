@@ -1,4 +1,4 @@
-Package: lv.pienazupa.keyspeed
+Package: lv.kristapsausters.keyspeed
 Name: LV Key Speeder
 Version: 5.0.0
 Architecture: iphoneos-arm
@@ -7,7 +7,7 @@ Homepage: http://pienazupa.lv/
 Maintainer: PienaZupa <pienazupa@gmail.com>
 Author: PienaZupa <pienazupa@gmail.com>
 Section: Keyboards
-Conflicts: lv.pienazupa.keyclean
-Provides: lv.pienazupa.keyclean
-Replaces: lv.pienazupa.keyclean
+Conflicts: lv.kristapsausters.keyclean
+Provides: lv.kristapsausters.keyclean
+Replaces: lv.kristapsausters.keyclean
 Pre-Depends: firmware (>= 5.0), firmware (<< 6.0)

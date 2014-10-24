@@ -1,4 +1,4 @@
-Package: lv.pienazupa.keyclean
+Package: lv.kristapsausters.keyclean
 Name: LV Key Cleaner
 Version: 7.0.0
 Architecture: iphoneos-arm
@@ -8,7 +8,7 @@ Depiction: http://repo.pienazupa.lv/www/keycleaner/index.htm
 Maintainer: PienaZupa <pienazupa@gmail.com>
 Author: PienaZupa <pienazupa@gmail.com>
 Section: Keyboards
-Conflicts: lv.pienazupa.keyspeed
-Provides: lv.pienazupa.keyspeed
-Replaces: lv.pienazupa.keyspeed
+Conflicts: lv.kristapsausters.keyspeed
+Provides: lv.kristapsausters.keyspeed
+Replaces: lv.kristapsausters.keyspeed
 Pre-Depends: firmware (>= 7.0), firmware (<< 8.0)
