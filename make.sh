@@ -8,9 +8,7 @@ function init_vars {
 }
 
 function purge_out {
-	cd $dir
-	find . -name '*.DS_Store' -type f -delete
-	find . -name '.deb' -type f -delete
+	find $src -name '*.DS_Store' -type f -delete
 	rm -rf $out/*
 }
 
