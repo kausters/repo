@@ -21,12 +21,12 @@ function make_apps {
 	mv $src/*.deb $_
 }
 
-function merge_apps {
+function composite {
 	dpkg-scanpackages -m $out >$out/Packages
 	gzip -9 -f $out/Packages
 }
 
-function clean_vars {
+function clear_vars {
 	unset dir
 	unset src
 	unset out
@@ -35,5 +35,5 @@ function clean_vars {
 init_vars
 reset_out
 make_apps
-merge_apps
-clean_vars
+composite
+clear_vars
