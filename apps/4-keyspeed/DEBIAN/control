@@ -1,12 +1,12 @@
-Package: lv.pienazupa.lvkeyboardspeed
-Name: LV Key Speeder 4
-Version: 1.0.1
+Package: lv.pienazupa.keyspeed
+Name: LV Key Speeder
+Version: 4.0.1
 Architecture: iphoneos-arm
 Description: Paātrina rakstīšanu ar iOS 4 LV tastatūru.
 Homepage: http://pienazupa.lv/
 Maintainer: PienaZupa <pienazupa@gmail.com>
 Author: PienaZupa <pienazupa@gmail.com>
 Section: Keyboards
-Recommends: lv.pienazupa.keyboardcleaner
-Enhances: lv.pienazupa.keyboardcleaner
+Recommends: lv.pienazupa.keyclean
+Enhances: lv.pienazupa.keyclean
 Pre-Depends: firmware (>= 4.0), firmware (<< 5.0)

@@ -1,6 +1,6 @@
-Package: lv.pienazupa.keyboardcleaner
-Name: LV Key Cleaner 4
-Version: 1.0.3
+Package: lv.pienazupa.keyclean
+Name: LV Key Cleaner
+Version: 4.0.3
 Architecture: iphoneos-arm
 Description: Aizvāc svešos simbolus no iOS 4 tastatūras.
 Homepage: http://pienazupa.lv/
