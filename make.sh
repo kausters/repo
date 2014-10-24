@@ -32,8 +32,13 @@ function merge {
 	gzip -9 -f Packages
 }
 
+function clean {
+	unset dir
+}
+
 init
 purge
 compile
 move
 merge
+clean
