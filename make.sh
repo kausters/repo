@@ -26,14 +26,7 @@ function composite {
 	gzip -9 -f $out/Packages
 }
 
-function clear_vars {
-	unset dir
-	unset src
-	unset out
-}
-
 init_vars
 reset_out
 make_apps
 composite
-clear_vars
