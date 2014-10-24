@@ -11,8 +11,12 @@ function purge {
 	cd $dir
 	find . -name '*.DS_Store' -type f -delete
 	find . -name '.deb' -type f -delete
-	rm -f $out/Packages.gz
-	rm -rf $deb
+	rm -rf $out/*
+}
+
+function copy_repo {
+	cd $dir/repo
+	cp * $out
 }
 
 function compile {
@@ -44,6 +48,7 @@ function clean {
 
 init
 purge
+copy_repo
 compile
 move
 merge
