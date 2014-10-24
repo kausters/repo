@@ -31,7 +31,7 @@ function move {
 }
 
 function merge {
-	dpkg-scanpackages -m . /dev/null >Packages 2>/dev/null
+	dpkg-scanpackages -m . >Packages
 	gzip -9 -f Packages
 }
 
