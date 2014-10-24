@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd /home/kristaps/Cydia/apps/lv.pienazupa.lvui/
+for SRC in `find . -type d -name English.lproj`
+do
+	cd ${SRC}
+	cd ..
+	echo ${SRC}
+	mv English.lproj lv.lproj
+	cd /home/kristaps/Cydia/apps/lv.pienazupa.lvui/
+done
+echo 'Done.'

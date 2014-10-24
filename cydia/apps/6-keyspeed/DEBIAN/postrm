@@ -1,0 +1,19 @@
+#!/bin/bash
+cd /System/Library/TextInput/TextInput_lv.bundle/
+
+if [[ -f Keyboard-lv.plist.bak ]];
+then
+	cp -f -T Keyboard-lv.plist.bak Keyboard-lv.plist
+fi
+
+#respring
+
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ ${CYDIA+@} ]]; then
+	eval "echo 'finish:restart' >&${cydia[0]}"
+else
+	echo "Respring lūdzu."
+	killall springboard
+fi

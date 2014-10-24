@@ -1,0 +1,45 @@
+#!/bin/bash
+
+echo "Copying /System/Library/Frameworks/"
+cd '/home/kristaps/.gvfs/sftp for root on 192.168.1.105/System/Library/Frameworks/'
+for SRC in `find . -type d -name English.lproj`
+do
+	mkdir -p /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/Frameworks/${SRC}
+	cp -P ${SRC}/*.strings /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/Frameworks/${SRC}
+	cp -P ${SRC}/*.plist /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/Frameworks/${SRC}
+	echo ${SRC}
+done
+echo "Done."
+
+echo "Copying /System/Library/PrivateFrameworks/"
+cd '/home/kristaps/.gvfs/sftp for root on 192.168.1.105/System/Library/PrivateFrameworks/'
+for SRC in `find . -type d -name English.lproj`
+do
+	mkdir -p /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/PrivateFrameworks/${SRC}
+	cp -P ${SRC}/*.strings /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/PrivateFrameworks/${SRC}
+	cp -P ${SRC}/*.plist /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/PrivateFrameworks/${SRC}
+	echo ${SRC}
+done
+echo "Done."
+
+echo "Copying /Applications/"
+cd '/home/kristaps/.gvfs/sftp for root on 192.168.1.105/Applications/'
+for SRC in `find . -type d -name English.lproj`
+do
+	mkdir -p /home/kristaps/Cydia/apps/lv.pienazupa.lvui/Applications/${SRC}
+	cp -P ${SRC}/*.strings /home/kristaps/Cydia/apps/lv.pienazupa.lvui/Applications/${SRC}
+	cp -P ${SRC}/*.plist /home/kristaps/Cydia/apps/lv.pienazupa.lvui/Applications/${SRC}
+	echo ${SRC}
+done
+
+echo "Copying /System/Library/PreferenceBundles/"
+cd '/home/kristaps/.gvfs/sftp for root on 192.168.1.105/System/Library/PreferenceBundles/'
+dir
+for SRC in `find . -type d -name English.lproj`
+do
+	mkdir -p /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/PreferenceBundles/${SRC}
+	cp -P ${SRC}/*.strings /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/PreferenceBundles/${SRC}
+	cp -P ${SRC}/*.plist /home/kristaps/Cydia/apps/lv.pienazupa.lvui/System/Library/PreferenceBundles/${SRC}
+	echo ${SRC}
+done
+echo "All done."

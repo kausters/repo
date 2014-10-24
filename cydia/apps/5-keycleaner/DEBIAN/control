@@ -1,0 +1,13 @@
+Package: lv.pienazupa.keyboardcleaner5
+Name: LV Key Cleaner 5
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Aizvāc svešos simbolus no iOS 5 tastatūras.
+Homepage: http://pienazupa.lv/
+Maintainer: PienaZupa <pienazupa@gmail.com>
+Author: PienaZupa <pienazupa@gmail.com>
+Section: Keyboards
+Conflicts: lv.pienazupa.lvkeyboardspeed5
+Provides: lv.pienazupa.lvkeyboardspeed5
+Replaces: lv.pienazupa.lvkeyboardspeed5
+Pre-Depends: firmware (>= 5.0), firmware (<< 6.0)

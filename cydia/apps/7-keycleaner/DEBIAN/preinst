@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /System/Library/TextInput/TextInput_lv.bundle/
+
+if [[ -f Keyboard-lv.plist.bak ]];
+then
+	echo ""
+else
+	mv -f -T Keyboard-lv.plist Keyboard-lv.plist.bak
+fi

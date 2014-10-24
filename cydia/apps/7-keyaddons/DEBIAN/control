@@ -1,0 +1,11 @@
+Package: lv.pienazupa.keyaddons7
+Name: Key Addons 7
+Version: 7.0
+Architecture: iphoneos-arm
+Description: Papildus simboli visās iOS 7 tastatūrās.
+Homepage: http://pienazupa.lv/
+Depiction: http://repo.pienazupa.lv/www/keyaddons/index.htm
+Maintainer: PienaZupa <pienazupa@gmail.com>
+Author: PienaZupa <pienazupa@gmail.com>
+Section: Keyboards
+Pre-Depends: firmware (>= 7.0), firmware (<< 8.0)
