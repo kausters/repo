@@ -21,7 +21,8 @@ function make_apps {
 }
 
 function composite {
-	dpkg-scanpackages -m $out >$out/Packages
+	cd $out
+	dpkg-scanpackages -m . >$out/Packages
 	gzip -9 -f $out/Packages
 }
 
