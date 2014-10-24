@@ -1,6 +1,6 @@
 Package: lv.pienazupa.keyclean
 Name: LV Key Cleaner
-Version: 5.0
+Version: 5.0.0
 Architecture: iphoneos-arm
 Description: Aizvāc svešos simbolus no iOS 5 tastatūras.
 Homepage: http://pienazupa.lv/
