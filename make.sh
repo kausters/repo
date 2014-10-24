@@ -4,14 +4,12 @@ function init_vars {
 	dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # set working directory
 	src=$dir/apps
 	out=$dir/upload
-	deb=$out/deb
 }
 
 function reset_out {
 	find $src -name '*.DS_Store' -type f -delete
 	rm -rf $out/*
 	cp $dir/repo/* $out
-	mkdir $deb
 }
 
 function make_apps {
@@ -21,7 +19,8 @@ function make_apps {
 	do
 		dpkg-deb -b -Zgzip ${SRC} 2>/dev/null
 	done
-	mv $src/*.deb $deb
+	mkdir -p $out/deb
+	mv $src/*.deb $_
 }
 
 function merge_apps {
@@ -34,7 +33,6 @@ function clean_vars {
 	unset dir
 	unset src
 	unset out
-	unset deb
 }
 
 init_vars
