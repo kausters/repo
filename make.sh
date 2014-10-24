@@ -13,8 +13,7 @@ function purge_out {
 }
 
 function copy_repo_to_out {
-	cd $dir/repo
-	cp * $out
+	cp $dir/repo/* $out
 }
 
 function make_apps {
