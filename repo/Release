@@ -1,0 +1,8 @@
+Origin: Piena Zupas repozitorijs
+Label: Zupa Repo
+Suite: stable
+Version: 1.0
+Codename: zuparepo
+Architectures: iphoneos-arm
+Components: main
+Description: Piena Zupas mazie iPhone hacki u.tml.
