@@ -17,7 +17,7 @@ function compile {
 	for SRC in `find . -type d -mindepth 1 -maxdepth 1`
 	#for SRC in `ls -d */`
 	do
-		dpkg-deb -b -Zgzip ${SRC}
+		dpkg-deb -b -Zgzip ${SRC} 2>/dev/null
 	done
 }
 
