@@ -2,18 +2,21 @@
 
 function init {
 	dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # set working directory
+	src=$dir/apps
+	out=$dir/upload
+	deb=$out/deb
 }
 
 function purge {
 	cd $dir
 	find . -name '*.DS_Store' -type f -delete
 	find . -name '.deb' -type f -delete
-	rm -f $dir/upload/Packages.gz
-	rm -rf $dir/upload/deb/
+	rm -f $out/Packages.gz
+	rm -rf $deb
 }
 
 function compile {
-	cd $dir/apps
+	cd $src
 	for SRC in `find . -type d -mindepth 1 -maxdepth 1`
 	#for SRC in `ls -d */`
 	do
@@ -22,9 +25,9 @@ function compile {
 }
 
 function move {
-	mkdir $dir/upload/deb/
-	mv *.deb $dir/upload/deb/
-	cd $dir/upload
+	mkdir $deb
+	mv *.deb $deb
+	cd $out
 }
 
 function merge {
@@ -34,6 +37,9 @@ function merge {
 
 function clean {
 	unset dir
+	unset src
+	unset out
+	unset deb
 }
 
 init
