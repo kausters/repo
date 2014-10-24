@@ -7,12 +7,9 @@ function init_vars {
 	deb=$out/deb
 }
 
-function purge_out {
+function reset_out {
 	find $src -name '*.DS_Store' -type f -delete
 	rm -rf $out/*
-}
-
-function copy_repo_to_out {
 	cp $dir/repo/* $out
 }
 
@@ -44,8 +41,7 @@ function clean_vars {
 }
 
 init_vars
-purge_out
-copy_repo_to_out
+reset_out
 make_apps
 move_apps_to_out
 merge_apps
