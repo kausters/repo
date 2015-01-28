@@ -14,18 +14,18 @@ function file_vars {
 function backup {
 	file_vars $1
 	mkdir -p $backups
-	mv -f $original $backedup
+	cp -f $original $backedup
 }
 
 function restore {
 	file_vars $1
 	mkdir -p $backups
-	mv -f $backedup $original
+	cp -f $backedup $original
 }
 
 function install {
 	file_vars $1
-	mv -f $packaged $target
+	cp -f $packaged $target
 }
 
 function cleanup {
