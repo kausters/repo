@@ -29,12 +29,11 @@ panel > block {
 .cydia-only {
 	display:none
 }
-body.pinstripe {
+body {
 	padding: 10px 0 0;
-	background:#fff url(background.png) repeat-y top center;
+	background: #efeff4;
 }
 @media screen and (max-device-width: 480px) {
-	body.pinstripe { background: #c7ced5 url(http://cache.saurik.com/menes/pinstripes.png); }
 	panel { background:transparent }
 	.cydia-only { display:block }
 	.browser-only { display:none }
