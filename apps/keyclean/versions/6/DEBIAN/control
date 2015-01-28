@@ -1,4 +1,4 @@
-Package: lv.kristapsausters.keyclean
+Package: lv.kristapsausters.keyclean.core
 Name: LV Key Cleaner
 Version: 6.0.0
 Architecture: iphoneos-arm

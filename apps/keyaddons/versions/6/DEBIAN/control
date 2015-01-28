@@ -1,4 +1,4 @@
-Package: lv.kristapsausters.keyaddons
+Package: lv.kristapsausters.keyaddons.core
 Name: Key Addons
 Version: 6.0.1
 Architecture: iphoneos-arm

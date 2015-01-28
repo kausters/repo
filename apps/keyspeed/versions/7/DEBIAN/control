@@ -1,4 +1,4 @@
-Package: lv.kristapsausters.keyspeed
+Package: lv.kristapsausters.keyspeed.core
 Name: LV Key Speeder
 Version: 7.0.0
 Architecture: iphoneos-arm
