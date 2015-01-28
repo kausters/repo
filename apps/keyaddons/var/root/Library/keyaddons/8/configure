@@ -5,26 +5,26 @@ backups="${source}/backups"
 target='/System/Library/Frameworks/UIKit.framework'
 command=$1
 
+function file_vars {
+	original="${target}/${1}"
+	backedup="${backups}/${1}"
+	packaged="${package}/${1}"
+}
+
 function backup {
-	file=$1 # filename
+	file_vars $1
 	mkdir -p $backups
-	original="${target}/${file}"
-	backedup="${backups}/${file}"
 	mv -f $original $backedup
 }
 
 function restore {
-	file=$1 # filename
+	file_vars $1
 	mkdir -p $backups
-	original="${target}/${file}"
-	backedup="${backups}/${file}"
 	mv -f $backedup $original
 }
 
 function install {
-	file=$1 # filename
-	packaged="${package}/${file}"
-	original="${target}/${file}"
+	file_vars $1
 	mv -f $packaged $target
 }
 
