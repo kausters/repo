@@ -14,7 +14,7 @@ function respring {
 function remove_core {
 	IFS='.' read -ra version <<< "`sw_vers -productVersion`"
 	package="/var/root/Library/${1}/${version[0]}"
-	cd package && ./configure remove
+	cd $package && ./configure remove
 }
 
 remove_core
