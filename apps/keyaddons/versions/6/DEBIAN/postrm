@@ -5,15 +5,3 @@ if [[ -f Keyboard-default.plist.bak ]];
 then
 	cp -f -T Keyboard-default.plist.bak Keyboard-default.plist
 fi
-
-#respring
-
-declare -a cydia
-cydia=($CYDIA)
-
-if [[ ${CYDIA+@} ]]; then
-	eval "echo 'finish:restart' >&${cydia[0]}"
-else
-	echo "Respring lūdzu."
-	killall springboard
-fi
