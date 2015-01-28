@@ -11,4 +11,10 @@ function respring {
 	fi
 }
 
+function remove_core {
+	target="lv.kristapsausters.keyaddons.core"
+	dpkg -r $package_path
+}
+
+remove_core
 respring
