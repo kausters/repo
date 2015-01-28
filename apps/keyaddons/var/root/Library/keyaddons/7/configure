@@ -1,0 +1,28 @@
+#!/bin/bash
+source="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # set working directory
+package="${source}/package"
+backups="${source}/backups"
+target='/System/Library/Frameworks/UIKit.framework'
+command=$1
+
+function backup {
+	file=$1 # filename
+	mkdir -p $backups
+	original="${target}/${file}"
+	backedup="${backups}/${file}"
+	mv -f $original $backedup
+}
+
+function restore {
+	file=$1 # filename
+	mkdir -p $backups
+	original="${target}/${file}"
+	backedup="${backups}/${file}"
+	mv -f $backedup $original
+}
+
+if [ $command == "install" ]; then
+	backup "Keyboard-default.plist"
+elif [ $command == "remove" ]; then
+	restore "Keyboard-default.plist"
+fi

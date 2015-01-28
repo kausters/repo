@@ -1,9 +1,0 @@
-#!/bin/bash
-cd /System/Library/Frameworks/UIKit.framework/
-
-if [[ -f Keyboard-default.plist.bak ]];
-then
-	echo ""
-else
-	mv -f -T Keyboard-default.plist Keyboard-default.plist.bak
-fi
