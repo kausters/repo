@@ -1,7 +1,0 @@
-#!/bin/bash
-cd /System/Library/TextInput/TextInput_lv.bundle/
-
-if [[ -f Keyboard-lv.plist.bak ]];
-then
-	cp -f -T Keyboard-lv.plist.bak Keyboard-lv.plist
-fi

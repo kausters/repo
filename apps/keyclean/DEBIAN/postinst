@@ -11,14 +11,11 @@ function respring {
 	fi
 }
 
-function setup_core {
-	package=$1
-	target="lv.kristapsausters.${package}.core"
+function install {
 	IFS='.' read -ra version <<< "`sw_vers -productVersion`"
-	package_dir="/var/root/Library/${package}"
-	package_path="`ls ${package_dir}/${target}_${version[0]}*`"
-	dpkg -i $package_path
+	package="/var/root/Library/${1}/${version[0]}"
+	cd $package && ./configure install
 }
 
-setup_core "keyclean"
+install "keyclean"
 respring
