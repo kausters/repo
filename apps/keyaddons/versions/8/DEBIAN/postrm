@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /System/Library/Frameworks/UIKit.framework/
+
+if [[ -f Keyboard-default.plist.bak ]];
+then
+	cp -f -T Keyboard-default.plist.bak Keyboard-default.plist
+fi
