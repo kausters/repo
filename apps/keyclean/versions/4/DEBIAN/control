@@ -9,4 +9,5 @@ Maintainer: Kristaps <kausters@gmail.com>
 Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
 Recommends: lv.kristapsausters.keyspeed
+Depends: lv.kristapsausters.keyclean
 Pre-Depends: firmware (>= 4.0), firmware (<< 5.0)

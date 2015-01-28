@@ -8,4 +8,5 @@ Depiction: http://repo.kristapsausters.lv/www/keyaddons/index.htm
 Maintainer: Kristaps <kausters@gmail.com>
 Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
+Depends: lv.kristapsausters.keyaddons
 Pre-Depends: firmware (>= 6.0), firmware (<< 7.0)

@@ -10,4 +10,5 @@ Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
 Conflicts: lv.kristapsausters.keyspeed
 Replaces: lv.kristapsausters.keyspeed
+Depends: lv.kristapsausters.keyclean
 Pre-Depends: firmware (>= 5.0), firmware (<< 6.0)

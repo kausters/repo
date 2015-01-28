@@ -10,4 +10,5 @@ Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
 Recommends: lv.kristapsausters.keyclean
 Enhances: lv.kristapsausters.keyclean
+Depends: lv.kristapsausters.keyspeed
 Pre-Depends: firmware (>= 4.0), firmware (<< 5.0)
