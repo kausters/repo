@@ -5,8 +5,8 @@ Architecture: iphoneos-arm
 Description: Paātrina rakstīšanu ar iOS 7 LV tastatūru.
 Homepage: http://kristapsausters.lv/
 Depiction: http://repo.kristapsausters.lv/www/keyspeed/index.htm
-Maintainer: PienaZupa <pienazupa@gmail.com>
-Author: PienaZupa <pienazupa@gmail.com>
+Maintainer: Kristaps <kausters@gmail.com>
+Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
 Conflicts: lv.kristapsausters.keyclean
 Provides: lv.kristapsausters.keyclean

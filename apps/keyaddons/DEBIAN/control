@@ -5,7 +5,7 @@ Architecture: iphoneos-arm
 Description: Papildus simboli visās tastatūrās.
 Homepage: http://kristapsausters.lv/
 Depiction: http://repo.kristapsausters.lv/www/keyaddons/index.htm
-Maintainer: PienaZupa <pienazupa@gmail.com>
-Author: PienaZupa <pienazupa@gmail.com>
+Maintainer: Kristaps <kausters@gmail.com>
+Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
 Pre-Depends: firmware (>= 7.0), firmware (<< 8.0)
