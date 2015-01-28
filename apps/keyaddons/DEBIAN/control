@@ -8,4 +8,4 @@ Depiction: http://repo.kristapsausters.lv/www/keyaddons/index.htm
 Maintainer: Kristaps <kausters@gmail.com>
 Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
-Pre-Depends: firmware (>= 7.0), firmware (<< 8.0)
+Pre-Depends: firmware (>= 6.0), firmware (<< 8.0)

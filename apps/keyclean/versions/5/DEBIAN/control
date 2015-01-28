@@ -9,6 +9,5 @@ Maintainer: Kristaps <kausters@gmail.com>
 Author: Kristaps <kausters@gmail.com>
 Section: Keyboards
 Conflicts: lv.kristapsausters.keyspeed
-Provides: lv.kristapsausters.keyspeed
 Replaces: lv.kristapsausters.keyspeed
 Pre-Depends: firmware (>= 5.0), firmware (<< 6.0)
