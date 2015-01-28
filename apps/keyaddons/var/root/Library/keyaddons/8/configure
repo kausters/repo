@@ -28,9 +28,14 @@ function install {
 	mv -f $packaged $target
 }
 
+function cleanup {
+	rm -rf $backups
+}
+
 if [ $command == "install" ]; then
 	backup "Keyboard-default.plist"
 	install "Keyboard-default.plist"
 elif [ $command == "remove" ]; then
 	restore "Keyboard-default.plist"
+	cleanup
 fi
