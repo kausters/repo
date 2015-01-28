@@ -1,0 +1,87 @@
+﻿<html><head><title>Keyboard Cleaner</title>
+	<link rel="stylesheet" type="text/css" href="/www/menes.css"/>
+	<link rel="stylesheet" type="text/css" href="/www/style.css"/>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<base target="_blank"/>
+
+</head><body class="pinstripe" onLoad="onTextContentLoaded();">
+<panel>
+    
+    <div class="horizontal-scroll-wrapper" id="scroller"></div>
+
+	<fieldset>
+		<div>
+			<p class="title">Ko tas dara?</p>
+			<p>Attīra visas tastatūras no daudziem svešajiem simboliem, atstājot tikai tos, kas piederīgi Settings izvēlētajām International Keyboards.</p>
+            <p>Īsumā: Mazāks bardaks rakstot, kā arī mazāka iespēja trāpīt uz nepareizās podziņas.</p>
+		</div>
+	</fieldset>
+    
+    <fieldset>
+		<div>
+			<p class="title">Kas mainījies?</p>
+			<p style="font-weight:bold; color:black;">1.0.3</p>
+            <ul>
+            	<li>Izņemti daži domēni: .org .eu .edu .us</li>
+            </ul>
+            <p style="font-weight:bold; color:black;">1.0.2</p>
+            <ul>
+            	<li>Simbolu 2. lapā zem &bull; pievienots  :)</li>
+            </ul>
+            <p style="font-weight:bold; color:black;">1.0.1</p>
+            <p>Jauni simboli, aktivizē kā garumzīmes</p>
+            <p>1. simbolu lapa:</p>
+            <ul>
+            	<li>Visiem cipariem superscript versijas.</li>
+                <li>Zem &amp; atjaunots §, kā bija OS 3</li>
+                <li>Zem @ pievienoti ® © ™</li>
+                <li>Zem / pievienotas daļas: ¼ ½ ¾</li>
+            </ul>
+            <p>2. simbolu lapa:</p>
+            <ul>
+                <li>Zem + pievienots ±</li>
+                <li>Zem &lt; &gt; pievienotas bultiņas &larr; &rarr;</li>
+                <li>Zem &bull; pievienoti ♥ ♪</li>
+            </ul>
+            <p style="font-weight:bold; color:black;">1.0</p>
+            <ul>
+            	<li>Aizvākti liekie burti.</li>
+            </ul>
+		</div>
+	</fieldset>
+    
+    <fieldset>
+		<div>
+			<p class="title">Vēl kas?</p>
+			<p style="font-size:1000%; font-weight:bold; text-align:center;">Jā!</p>
+            <p>Apvienojumā ar <strong><a href="cydia://package/lv.pienazupa.lvkeyboardspeed">Keyboard Speed-Up</a></strong>, Keyboard Cleaner ir neuzvarams!</p>
+            <img src="Yea.jpg" />
+		</div>
+	</fieldset>
+
+</panel>
+
+<script type="text/javascript" src="/www/iscroll2.js"></script>
+
+<script type="text/javascript">
+<!--
+	function onTextContentLoaded() {
+		document.getElementById('scroller').innerHTML='\
+		<div class="horizontal-scroll-area" style="width: 1000px">\
+			<img src="lv.png" /><img src="en.png" /><img src="speed.png" />\
+		</div>\
+		<div class="horizontal-scroll-pips">\
+		</div>';
+
+		var myScroll;
+
+		setTimeout( function() {
+			myScroll = new iScroll( document.getElementById('scroller')	);
+		}, 100);
+
+		}
+//-->
+</script>
+
+</body></html>
