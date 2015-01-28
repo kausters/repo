@@ -1,9 +1,0 @@
-#!/bin/bash
-cd /System/Library/Frameworks/UIKit.framework/
-
-if [[ -f Keyboard-lv.plist.bak ]];
-then
-	echo ""
-else
-	mv -f -T Keyboard-lv.plist Keyboard-lv.plist.bak
-fi

@@ -1,0 +1,11 @@
+Package: lv.kristapsausters.keyaddons
+Name: Key Addons
+Version: 8.0.0
+Architecture: iphoneos-arm
+Description: Papildus simboli visās tastatūrās.
+Homepage: http://kristapsausters.lv/
+Depiction: http://repo.kristapsausters.lv/www/keyaddons/index.htm
+Maintainer: Kristaps <kausters@gmail.com>
+Author: Kristaps <kausters@gmail.com>
+Section: Keyboards
+Pre-Depends: firmware (>= 6.0), firmware (<< 9.0)

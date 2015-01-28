@@ -1,0 +1,21 @@
+#!/bin/bash
+function respring {	
+	declare -a cydia
+	cydia=($CYDIA)
+
+	if [[ ${CYDIA+@} ]]; then
+		eval "echo 'finish:restart' >&${cydia[0]}"
+	else
+		echo "Respring lūdzu."
+		killall springboard
+	fi
+}
+
+function install {
+	IFS='.' read -ra version <<< "`sw_vers -productVersion`"
+	package="/var/root/Library/${1}/${version[0]}"
+	cd $package && ./configure install
+}
+
+install "keyclean"
+respring
