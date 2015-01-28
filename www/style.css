@@ -112,10 +112,7 @@ panel > fieldset > div, panel > label {
 }
 
 .horizontal-scroll-wrapper {
-	height:367px;
 	background:#8f9192;
-	border-top: 2px solid #7e8080;
-	border-bottom: 2px solid #7e8080;
 	overflow-x: hidden;
 	position:relative;
 	z-index:1;
@@ -124,22 +121,15 @@ panel > fieldset > div, panel > label {
 
 .horizontal-scroll-area {
 	z-index:1;
-	padding-top: 5px;
-/*	padding: 10px 10px 0px 10px;*/
 }
 .horizontal-scroll-area img {
-	width: 225px;
-/*	margin-left:10px;
-	margin-right:0px;*/
-	margin: 0px 0px 0px 10px;
-	border: 1px solid rgba(155,155,155,0.5);
-	outline: 1px solid rgba(32,32,32,0.2);
+	display: block;
+	width: 100%;
 }
 
 .horizontal-scroll-pips {
 	text-align:center;
 	float: bottom;
-	margin-top:5px;
 	padding:0;
 }
 
