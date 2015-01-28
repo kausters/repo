@@ -16,7 +16,8 @@ function reset_out {
 function generator {
 	for app in `find $src -type d -mindepth 1 -maxdepth 1`; do
 		if [ ! -z "`ls $app/versions 2>/dev/null`" ]; then
-			make_versions
+			appname=`echo "$app" | rev | awk -F / '{print $1}' | rev`
+			make_versions $appname
 			make_apps $app/tmp
 			rm -r $app/tmp
 		else
@@ -26,10 +27,10 @@ function generator {
 }
 
 function make_versions {
-	mkdir -p $app/tmp
+	mkdir -p $app/tmp/var/root/Library/$1
 	cp -r $app/DEBIAN $app/tmp
 	for version in `find $app/versions -type d -mindepth 1 -maxdepth 1`; do
-		dpkg-deb -b -Zgzip $version $app/tmp 2>/dev/null
+		dpkg-deb -b -Zgzip $version $app/tmp/var/root/Library/$1 2>/dev/null
 	done
 }
 

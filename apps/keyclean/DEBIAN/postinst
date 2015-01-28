@@ -12,12 +12,13 @@ function respring {
 }
 
 function setup_core {
-	target="lv.kristapsausters.keyclean.core"
+	package=$1
+	target="lv.kristapsausters.${package}.core"
 	IFS='.' read -ra version <<< "`sw_vers -productVersion`"
-	package_name="`ls ${target}_${version[0]}*`"
-	package_path="../data/${package_name}"
+	package_dir="/var/root/Library/${package}"
+	package_path="`ls ${package_dir}/${target}_${version[0]}*`"
 	dpkg -i $package_path
 }
 
-setup_core
+setup_core "keyclean"
 respring
