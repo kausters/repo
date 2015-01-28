@@ -13,7 +13,7 @@ function reset_out {
 	mkdir -p $out/deb
 }
 
-function make_apps {
+function generator {
 	for app in `find $src -type d -mindepth 1 -maxdepth 1`; do
 		if [ ! -z "`ls $app/versions 2>/dev/null`" ]; then make_versions; fi
 		dpkg-deb -b -Zgzip $app $out/deb 2>/dev/null
@@ -36,5 +36,5 @@ function composite {
 
 init_vars
 reset_out
-make_apps
+generator
 composite
