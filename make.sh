@@ -14,9 +14,16 @@ function reset_out {
 }
 
 function make_apps {
-	for app in `find $src -type d -mindepth 1 -maxdepth 1`
-	do
+	for app in `find $src -type d -mindepth 1 -maxdepth 1`; do
+		if [ ! -z "`ls $app/versions 2>/dev/null`" ]; then make_versions; fi
 		dpkg-deb -b -Zgzip $app $out/deb 2>/dev/null
+	done
+}
+
+function make_versions {
+	mkdir -p $app/tmp
+	for version in `find $app/versions -type d -mindepth 1 -maxdepth 1`; do
+		dpkg-deb -b -Zgzip $version $app/tmp 2>/dev/null
 	done
 }
 
