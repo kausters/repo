@@ -2,7 +2,7 @@ Package: lv.kristapsausters.keyspeed
 Name: LV Key Speeder
 Version: 7.0.0
 Architecture: iphoneos-arm
-Description: Paātrina rakstīšanu ar iOS 7 LV tastatūru.
+Description: Paātrina rakstīšanu ar LV tastatūru.
 Homepage: http://kristapsausters.lv/
 Depiction: http://repo.kristapsausters.lv/www/keyspeed/index.htm
 Maintainer: PienaZupa <pienazupa@gmail.com>

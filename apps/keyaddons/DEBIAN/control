@@ -2,7 +2,7 @@ Package: lv.kristapsausters.keyaddons
 Name: Key Addons
 Version: 7.0.0
 Architecture: iphoneos-arm
-Description: Papildus simboli visās iOS 7 tastatūrās.
+Description: Papildus simboli visās tastatūrās.
 Homepage: http://kristapsausters.lv/
 Depiction: http://repo.kristapsausters.lv/www/keyaddons/index.htm
 Maintainer: PienaZupa <pienazupa@gmail.com>
