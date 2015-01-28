@@ -15,8 +15,13 @@ function reset_out {
 
 function generator {
 	for app in `find $src -type d -mindepth 1 -maxdepth 1`; do
-		if [ ! -z "`ls $app/versions 2>/dev/null`" ]; then make_versions; fi
-		dpkg-deb -b -Zgzip $app $out/deb 2>/dev/null
+		if [ ! -z "`ls $app/versions 2>/dev/null`" ]; then
+			make_versions
+			make_apps $app/tmp
+			rm -r $app/tmp
+		else
+			make_apps $app
+		fi
 	done
 }
 
@@ -26,6 +31,10 @@ function make_versions {
 	for version in `find $app/versions -type d -mindepth 1 -maxdepth 1`; do
 		dpkg-deb -b -Zgzip $version $app/tmp 2>/dev/null
 	done
+}
+
+function make_apps {
+	dpkg-deb -b -Zgzip $1 $out/deb 2>/dev/null
 }
 
 function composite {
