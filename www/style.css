@@ -30,7 +30,7 @@ panel > block {
 	display:none
 }
 body.pinstripe {
-	padding:0;
+	padding: 10px 0 0;
 	background:#fff url(background.png) repeat-y top center;
 }
 @media screen and (max-device-width: 480px) {
