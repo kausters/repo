@@ -22,6 +22,7 @@ function make_apps {
 
 function make_versions {
 	mkdir -p $app/tmp
+	cp -r $app/DEBIAN $app/tmp
 	for version in `find $app/versions -type d -mindepth 1 -maxdepth 1`; do
 		dpkg-deb -b -Zgzip $version $app/tmp 2>/dev/null
 	done
