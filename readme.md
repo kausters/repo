@@ -27,3 +27,7 @@ This ensures that accents are instantly under the finger, making accent activati
 To build packages, run `make` from root folder. If successful, the packages will be placed into the upload/deb folder. The upload folder will also contain copies of the repository information from /repo, for easier uploading.
 
 To remove compiled packages and copied repository information run `make clean`.
+
+## Dependencies
+
+The build script is made for OS X and requires dpkg and gzip.
