@@ -8,9 +8,9 @@ function init_vars {
 
 function reset_out {
 	find $src -name '*.DS_Store' -type f -delete
-	rm -rf $out/*
-	cp $dir/repo/* $out
+	rm -rf $out
 	mkdir -p $out/deb
+	cp $dir/repo/* $out
 }
 
 function generator {
