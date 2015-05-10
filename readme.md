@@ -2,6 +2,8 @@
 
 This is the package content and build script for the Zupa Repo Cydia repository found at http://repo.kristapsausters.lv
 
+All packages are meant for installing on jailbroken iOS devices via Cydia.
+
 # Packages
 
 ## Key Addons (iOS 6 – iOS 8)
