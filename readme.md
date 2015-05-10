@@ -24,4 +24,6 @@ This ensures that accents are instantly under the finger, making accent activati
 
 # Building
 
-To build packages, run `make.sh` from root folder. If successful, the packages will be placed into the upload/deb folder.
+To build packages, run `make` from root folder. If successful, the packages will be placed into the upload/deb folder. The upload folder will also contain copies of the repository information from /repo, for easier uploading.
+
+To remove compiled packages and copied repository information run `make clean`.
