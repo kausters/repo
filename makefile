@@ -1,5 +1,5 @@
 build:
-	./build.sh
+	@./build.sh
 
 clean:
-	./clean.sh
+	@./clean.sh
