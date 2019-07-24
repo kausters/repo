@@ -16,7 +16,7 @@ Removes extended-Latin characters from the English keyboard and non-Latvian cha
 
 This ensures that there are no non-Latvian accents under keys in Latvian keyboard even when it's used in combination with the English keyboard. It works by letting English QWERTY keyboard hold only ASCII characters and Latvian keyboard only ASCII and Latvian accent characters.
 
-## LV Key Speeder (iOS 4 – iOS 9)
+## LV Key Speeder (iOS 4 – iOS 12)
 
 Removes non-accented characters from Latvian keyboard's key accent menus.
 

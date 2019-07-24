@@ -10,4 +10,4 @@ Author: Kristaps <kausters+repo@gmail.com>
 Section: Keyboards
 Conflicts: lv.kristapsausters.keyclean
 Replaces: lv.kristapsausters.keyclean
-Pre-Depends: firmware (>= 4.0), firmware (<< 11.0)
+Pre-Depends: firmware (>= 4.0), firmware (<< 13.0)
