@@ -10,7 +10,7 @@ Packages are for installing on jailbroken iOS devices via Cydia.
 
 Adds custom symbols to keyboards.
 
-## LV Key Cleaner (iOS 4 – iOS 9)
+## LV Key Cleaner (iOS 4 – iOS 12)
 
 Removes extended-Latin characters from the English keyboard and non-Latvian characters from the Latvian keyboard.
 
